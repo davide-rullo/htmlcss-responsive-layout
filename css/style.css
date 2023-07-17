@@ -78,6 +78,17 @@ body {
     border-radius: 15px;
 }
 
+.col-5{
+    width: calc(100% / 5 - 1rem); 
+    margin-right: 1rem; 
+
+}
+
+.col-11{
+    width: calc(100% / 5 * 4 - 1rem);
+    margin-left: 1rem; 
+}
+
 .row {
     flex-wrap: wrap;
 }
@@ -184,7 +195,7 @@ header a{
    
 }
 
-.plans h2, p{
+.plans h2, .plans p{
     color: white;
     padding-bottom: 2rem;
 }
@@ -225,6 +236,72 @@ header a{
 /* End Planning */
 
 
+/* Testimonials */
+.testimonials{
+    height: 800px;
+}
+
+.upper{
+    color: black;
+    text-align: center;
+    padding: 3rem 0 2rem;
+    text-transform: uppercase;
+}
+
+.testimonials h2{
+    color: var(--rsl-primary);
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.values{
+    color: black;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1rem;
+   
+
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+    display: block;
+   object-fit: cover;
+}
+
+
+.purple-bar{
+    background-color: var(--rsl-primary);
+    color: var(--rsl-white);
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1.5rem
+}
+
+.purple-bar .quote{
+    color: var(--rsl-white);
+    padding: 1rem;
+    line-height: 2;
+}
+
+.purple-bar p{
+    padding: 0 1rem 1rem
+}
+/* End testimonials */
+
+
+
+
+
 @media screen and (min-width: 1px) and (max-width:767px){
     .d-sm-none {
         display: none;
@@ -247,6 +324,21 @@ header a{
     }
     .white-box{
         margin-top: 0;
+    }
+
+    .container, .plans{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonials .col-5{
+        width: auto;
     }
 }
 
