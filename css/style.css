@@ -1,5 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root{
+    --rsl-primary: #9792e4;
+    --rsl-jumbo: #0084fd;
+    --rsl-free: #fdc15f;
+    --rsl-dark: #333333;
+    --rsl-white: #ffffff;
+}
+
+/* Utilities */
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* End Utilities */
+
+/* Header */
+
+.logo img{
+    width: 70px;
+}
+
+header .container{
+    padding: .5rem;
+}
+
+.desktop_menu{
+    gap: 1.5rem;
+}
+
+header{
+    background-color: var(--rsl-jumbo);
+    color: var(--rsl-white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--rsl-white);
+  
+}
+
+.white_btn{
+    background-color: var(--rsl-white);
+    color: black;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+
+@media screen and (min-width: 1px) {
+    .d-sm-none {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .d-md-none {
+        display: none;
+    }
+    
+    .d-md-flex{
+        display: flex;
+    }
+
+  
 }
