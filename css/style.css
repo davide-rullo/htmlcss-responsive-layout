@@ -106,7 +106,7 @@ img {
     flex-direction: column;
 }
 
-.col-8{
+.col-8 {
     width: calc(100% / 12 * 8 - 1rem);
 }
 
@@ -332,7 +332,7 @@ header a {
     font-size: 2rem;
 }
 
-.benefits p{
+.benefits p {
     color: grey;
 }
 
@@ -391,11 +391,11 @@ header a {
     padding-bottom: 2rem;
 }
 
-.about .q-marks{
+.about .q-marks {
     position: relative;
 }
 
-.about .q-marks i{
+.about .q-marks i {
     position: absolute;
     left: 100px;
     bottom: 70px;
@@ -403,13 +403,13 @@ header a {
     color: var(--rsl-primary);
 }
 
-.ceo h4{
+.ceo h4 {
     padding: 1rem 0 1rem 1rem;
     font-size: 1.2rem;
     color: var(--rsl-primary);
 }
 
-.ceo a{
+.ceo a {
     text-decoration: none;
     background-color: var(--rsl-primary);
     color: var(--rsl-white);
@@ -418,14 +418,72 @@ header a {
     font-size: .6rem;
 }
 
-.free{
+.free {
     background-color: var(--rsl-primary);
-    height: 400px;
+   
 }
 
-.cta{
-    width: 70%;
+.cta, .info {
+    width: 30%;
     margin: auto;
+    padding: 2rem 0;
+}
+
+.thin,
+.free h2,
+.free h3,
+.free p{
+    padding-bottom: 1rem;
+}
+
+
+.free h3 {
+    font-size: 2rem;
+}
+
+.free h3,
+.thin,
+.free p {
+    color: var(--rsl-white);
+}
+
+.free h2 {
+    color: var(--rsl-free);
+    font-size: 3rem;
+}
+
+.start {
+    background-color: var(--rsl-white);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+
+.start a{
+    text-decoration: none;
+    color: var(--rsl-primary);
+}
+
+.copy{
+    padding-top: 1rem;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--rsl-dark);
+    color: var(--rsl-white);
+    text-align: center;
+}
+
+.last{
+    padding: 4rem 0 1rem;
+ 
+}
+
+.last a{
+    color: var(--rsl-primary);
 }
 
 /* End About */
@@ -436,13 +494,15 @@ header a {
         display: none;
     }
 
-    .jumbo .col-8, .col-4 {
+    .jumbo .col-8,
+    .col-4 {
         flex-direction: column;
         width: 100%;
     }
 
-    .col-8 {
+    .jumbo .col-8 {
         align-items: center;
+        justify-content: center;
     }
 
     .plans .row {
@@ -473,6 +533,12 @@ header a {
         width: auto;
     }
 
+    .about .row{
+        justify-content: center;
+    }
+    .about .col-8, .about .col-4{
+        width: 100%;
+    }
 
 }
 
