@@ -61,7 +61,7 @@ img {
 .jumbo .col-8 {
     width: calc(100% / 12 * 8 - 1rem);
     align-items: flex-start;
-
+    
 
 }
 
@@ -155,9 +155,12 @@ header a {
     padding-top: 2rem;
 }
 
+
+
+
 .hero-right img {
     max-width: 250px;
-
+  
 }
 
 .jumbo .col-4,
@@ -452,10 +455,15 @@ header a {
     font-size: 3rem;
 }
 
+.thin{
+    letter-spacing: 2px;
+}
+
 .start {
     background-color: var(--rsl-white);
     padding: 1rem 2rem;
     border-radius: 30px;
+    
 }
 
 .start a{
@@ -544,6 +552,10 @@ footer{
 
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
+    .jumbo .col-8{
+        flex-direction: column;
+    }
+
     .d-md-none {
         display: none;
     }
