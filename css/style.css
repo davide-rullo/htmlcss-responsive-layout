@@ -145,6 +145,9 @@ header a {
     padding: .5rem;
 }
 
+.white_btn:hover{
+    filter: brightness(110%);
+}
 
 /* End Header */
 
@@ -375,6 +378,9 @@ header a {
     padding-top: .5rem;
 }
 
+.more a:hover{
+    background-color: #b1ade4;
+}
 /* End Benefits */
 
 
@@ -469,6 +475,14 @@ header a {
 .start a{
     text-decoration: none;
     color: var(--rsl-primary);
+}
+
+.start:hover{
+    background-color: #333333;
+}
+
+.start:hover a{
+    color: white;
 }
 
 .copy{
