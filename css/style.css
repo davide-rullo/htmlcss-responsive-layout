@@ -448,6 +448,10 @@ p{
     font-size: .6rem;
 }
 
+.find-me{
+    margin: 0 1rem;
+}
+
 .free {
     background-color: var(--rsl-primary);
    
@@ -579,6 +583,10 @@ footer{
 
     .testimonials p{
         text-align: center;
+    }
+
+    .ceo{
+        display: block;
     }
 
     .about .row{
